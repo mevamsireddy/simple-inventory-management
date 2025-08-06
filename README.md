@@ -44,14 +44,14 @@ inventory-api/
 
 ##  Local Setup Instructions
 
-### 1. Clone the Repository
+### 1\. Clone the Repository
 
 ```bash
 git clone https://github.com/mevamsireddy/simple-inventory-management.git
 cd inventory-api
 ````
 
-### 2. Create and Activate Virtual Environment
+### 2\. Create and Activate Virtual Environment
 
 ```bash
 # Create a virtual environment
@@ -62,7 +62,7 @@ python -m venv venv
 .\venv\Scripts\activate
 ```
 
-### 3. Install Dependencies
+### 3\. Install Dependencies
 
 Install all the required packages from the `requirements.txt` file.
 
@@ -70,7 +70,7 @@ Install all the required packages from the `requirements.txt` file.
 pip install -r requirements.txt
 ```
 
-### 4. Initialize the Database
+### 4\. Initialize the Database
 
 Run the Alembic migration command to create the necessary tables in the SQLite database. This command reads from your `app/models.py` file and builds the database schema.
 
@@ -80,7 +80,7 @@ alembic upgrade head
 
 After this command runs, an `inventory.db` file will appear in your project directory.
 
-### 5. Run the Server
+### 5\. Run the Server
 
 Start the application using the Uvicorn ASGI server.
 
@@ -90,7 +90,7 @@ uvicorn app.main:app --reload
 
 The API will now be running at `http://127.0.0.1:8000`. The `--reload` flag makes the server restart automatically after code changes.
 
-### 6. Access Interactive API Docs
+### 6\. Access Interactive API Docs
 
 FastAPI provides automatic interactive documentation. Once the server is running, navigate to one of the following URLs in your browser:
 
@@ -99,7 +99,7 @@ FastAPI provides automatic interactive documentation. Once the server is running
 
 -----
 
-## 📬 API Endpoints
+##  API Endpoints
 
 | Method  | Path                                 | Description                                  |
 | :-----  | :----------------------------------- | :------------------------------------------- |
@@ -114,7 +114,7 @@ FastAPI provides automatic interactive documentation. Once the server is running
 
 -----
 
-## ⚙️ Sample API Requests (`curl`)
+##  Sample API Requests (`curl`)
 
 Here are a few examples of how to interact with the API using `curl` from your terminal.
 
